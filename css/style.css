@@ -1,0 +1,333 @@
+/* GLOBAL CSS */
+html {
+    font-size: 20px;
+}
+body {
+    position: relative;
+
+}
+/* END GLOBAL CSS */
+
+
+/* HEADER CSS */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header .navbar {
+    padding: 0 1rem;
+}
+
+.header .navbar .topnav {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.header .topnav .navbar-nav .nav-link {
+    color: white;
+}
+
+
+.header .topnav .navbar-nav .nav-link:hover, .header .topnav .navbar-nav .active {
+    color: #009a9a;
+}
+
+.header .topnav .navbar-nav .active .under {
+    color: #009a9a;
+    width: 100%;
+}
+
+.under {
+    background-color: #009a9a;
+    height: 3px;
+    width: 0%;
+}
+
+.header .topnav .navbar-nav .nav-link:hover .under {
+    width: 100%;
+    transition: all 0.5s;
+}
+/* END HEADER CSS */
+
+/* CAROUSEL CSS */
+.mycarousel{
+    position: relative;
+}
+
+.mycarousel .carousel-inner img {
+    height: 30rem;
+}
+.mycarousel .carousel-inner .carousel__search-form {
+    z-index: 3;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mycarousel .carousel-inner .carousel__search-form p {
+    font-size: 1rem;
+}
+
+.mycarousel .carousel-inner .carousel__search-form .btn-search {
+    background-color: #009a9a;
+    color: white;
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+}
+
+
+/* ENS CAROUSEL CSS */
+
+/* SERVICES CSS */
+
+.services .nav-item {
+    position: relative;
+    outline: none;
+}
+
+.services .nav-item span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.services .table {
+    margin-top: 2.5rem;
+    border-top: 1px solid  gray;
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+.services .table-primary {
+    background-color: #007bff;
+
+}
+
+.services .table-success {
+    background-color:#28a745;
+}
+/* END SERVICES CSS */
+
+/* ABOUT US CSS */
+.about .btn {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    padding-left: 1.2rem !important;
+}
+
+.about .card-body {
+    font-size: 0.8rem;
+    margin: auto;
+}
+/* END ABOUT US CSS */
+
+/* NEWS CSS */
+
+.news .card {
+    overflow: hidden;
+}
+
+.news .card .card-title {
+    font-size: 0.8rem;
+    color: #009a9a;
+}
+
+.news .readmore {
+    background-color: #009a9a;
+    height: 3rem;
+    line-height: 3rem;
+    position: relative;
+}
+
+.news .readmore img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.news .readmore:hover img {
+    transform: translateX(70%);
+    transition: all 0.5s;
+}
+
+.news .readmore .btn {
+    background-color: transparent;
+    color: white;
+}
+/* END NEWS CSS */
+
+/* INTRODUCTION CSS */
+.intro {
+    background-image: url(../images/slider2.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 24rem;
+    position: relative;
+}
+
+.intro__content .row {
+    position: relative;
+}
+
+.intro__content .row .col-12 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+
+.intro__content .btn-play {
+    width: 3.65rem;
+    height: 3.65rem;
+    margin:auto;
+    overflow: hidden;
+}
+
+.intro__content .btn-play:hover {
+    cursor: pointer;
+}
+
+.intro__content .btn-play:hover img {
+    transform: translateY(-3.65rem);
+}
+
+.intro__content .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+
+.intro__content p {
+    font-style: italic;
+}
+
+
+
+/* END INTRODUCTION CSS */
+
+/* FOOTER CSS */
+.footer {
+    background-color: #404040;
+    color: rgba(255, 254, 254, 0.445);
+    font-size: 0.8rem;
+}
+
+.footer .footer__content span {
+    display: block;
+    height: 5rem;
+    padding-bottom: 2rem;position: relative;
+}
+
+.footer .footer__content span h1 {
+    margin:0;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.footer .footer__content span h1::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 254, 254, 0.445);
+    left: 0;
+    bottom: 35%;
+    height: 2px;
+    width: 3rem;
+}
+
+.footer__content a {
+    color: rgba(255, 254, 254, 0.445);
+}
+
+.footer__content a:hover {
+    color: white;
+}
+
+.footer__news ul .media img{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.footer__contact__map iframe     {
+    width: 100%;
+    height: 13rem;
+}
+/* END FOOTER CSS */
+
+/* MODAL LOGIN CSS */
+#modalSignin .form-group label {
+    display: block;
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-signin {
+    background-color: #21b644;
+    color: white;
+}
+
+.btn-signin:hover {
+    background-color: #218137;
+}
+/* END MODAL LOGIN CSS */
+
+/* MODAL VIDEO CSS */
+
+/* END MODAL VIDEO CSS */
+
+/* MEDIA QUERY*/
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 992px){
+    .header .topnav .navbar-nav .active .nav-link, .header .topnav .navbar-nav .active .under {
+        width: 3.8rem;
+        color: #009a9a;
+    }
+    .header .topnav .navbar-nav .nav-link:hover .under {
+        width: 3.8rem;
+        color: #009a9a;
+    }
+}
+
+@media screen and (max-width: 786px){
+
+}
+
+@media screen and (max-width: 567px){
+
+}
+/* END MEDIA QUERY */
+
+/* HEADER STICKER CSS */
+.sticker {
+    position: fixed;
+    border-bottom: 3px solid #009a9a;
+    background-color:rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+
+.sticker .navbar-nav .nav-link {
+    color: black !important ;
+}
+/* END HEADER STICKER CSS */
+
